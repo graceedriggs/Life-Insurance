@@ -12,22 +12,13 @@ control <- trainControl(method='repeatedcv',
                         number=3, 
                         repeats=2)
 
-#grid_default <- expand.grid(
-#  nrounds = 50,
-#  max_depth = 15,
-#  eta = 0.3,
-#  gamma = 6,
-#  colsample_bytree = .5,
-#  min_child_weight = 12,
-#  subsample = 1)
-
 grid_default <- expand.grid(
   nrounds = 50,
   max_depth = 35,
   eta = 0.3,
   gamma = 6,
   colsample_bytree = .5,
-  min_child_weight = 10,
+  min_child_weight = 12,
   subsample = 1)
 
 #XGBoost
